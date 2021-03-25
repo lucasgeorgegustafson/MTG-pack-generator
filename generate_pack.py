@@ -4,9 +4,9 @@ import random
 
 def generate_pack(filepath, expansion):
 
-    with open(filepath) as oracle_cards:
+    with open(filepath) as cards_json:
 
-        cards = json.load(oracle_cards)
+        cards = json.load(cards_json)
 
     set_cards = []
     commons = []
@@ -30,11 +30,9 @@ def generate_pack(filepath, expansion):
         else:
             rares_and_mythics.append(card)
 
-    if len(rares_and_mythics) > 20:
-        pack.append(random.choice(rares_and_mythics)['name'])
-        pack.extend([card['name'] for card in random.choices(uncommons, k=3)])
-    else:
-        pack.extend([card['name'] for card in random.choices(uncommons, k=4)])
+    pack.append(random.choice(rares_and_mythics)['name'])
+
+    pack.extend([card['name'] for card in random.choices(uncommons, k=3)])
 
     pack.extend([card['name'] for card in random.choices(commons, k=10)])
 

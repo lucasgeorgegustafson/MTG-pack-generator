@@ -31,6 +31,3 @@ Snow-Covered Lands in relevant sets. If generating packs for drafting or
 playing sealed with one of these sets, understand that these Lands represent
 your Snow-Covered Lands.
 
-If requested to generate a pack from a set without rares, the script will
-generate a pack with four uncommons. If the set contains fewer than twenty
-rares, four cards will be selected from the pool of uncommons and rares.

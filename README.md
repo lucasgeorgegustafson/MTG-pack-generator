@@ -20,9 +20,9 @@ Note:
 
 The distribution of card rarities is that of current boosters:
 
-  1 Rare/Mythic
-  3 Uncommons
-  10 Commons
+  1 Rare/Mythic<br />
+  3 Uncommons<br />
+  10 Commons<br />
   1 Basic Land
 
 The Basic Land was left in partly for whimsy, but mostly as a stand-in for
@@ -36,20 +36,20 @@ bulk JSON only lists the set of a cards most recent printing, the card pool
 currently shrinks as the requested set grows older. So requesting an
 anachronistic 15 pack booster from Beta, for example, currently prints:
 
-Camouflage
-Camouflage
-Camouflage
-Camouflage
-False Orders
-False Orders
-False Orders
-False Orders
-False Orders
-False Orders
-False Orders
-False Orders
-False Orders
-False Orders
+Camouflage<br />
+Camouflage<br />
+Camouflage<br />
+Camouflage<br />
+False Orders<br />
+False Orders<br />
+False Orders<br />
+False Orders<br />
+False Orders<br />
+False Orders<br />
+False Orders<br />
+False Orders<br />
+False Orders<br />
+False Orders<br />
 Plains
 
 A request for an Alpha pack fails entirely.

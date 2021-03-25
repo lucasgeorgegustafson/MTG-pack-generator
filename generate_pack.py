@@ -2,7 +2,7 @@ import json
 import sys
 import random
 
-def generate_pack(filepath, expansion):
+def generate_pack(filepath, expansion, num_packs=1):
 
     with open(filepath) as cards_json:
 
@@ -30,17 +30,24 @@ def generate_pack(filepath, expansion):
         else:
             rares_and_mythics.append(card)
 
-    pack.append(random.choice(rares_and_mythics)['name'])
+    while num_packs > 0:
 
-    pack.extend([card['name'] for card in random.choices(uncommons, k=3)])
+        pack.append(random.choice(rares_and_mythics)['name'])
+        pack.extend([card['name'] for card in random.choices(uncommons, k=3)])
+        pack.extend([card['name'] for card in random.choices(commons, k=10)])
+        pack.append(random.choice(LANDS))
 
-    pack.extend([card['name'] for card in random.choices(commons, k=10)])
+        for card in pack:
+            print(card)
 
-    pack.append(random.choice(LANDS))
+        print()
 
-    for card in pack:
-        print(card)
+        num_packs -= 1
+        pack = []
 
 if __name__ == '__main__':
-    generate_pack(sys.argv[1], sys.argv[2])
+    try:
+        generate_pack(sys.argv[1], sys.argv[2], int(sys.argv[3]))
+    except IndexError:
+        generate_pack(sys.argv[1], sys.argv[2])
 

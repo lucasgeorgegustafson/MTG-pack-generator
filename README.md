@@ -9,7 +9,7 @@ After cloning, download the bulk data (Oracle Cards) from scryfall [here](https:
 
 Run the script:
 
-  python <generator filepath> <bulk JSON filepath> <set abbreviation (lowercase)>
+  python \<generator/filepath\> \<bulk/JSON/filepath\> \<set-abbreviation(lowercase)\>
 
 For example, generating a Kaldheim pack might look something like this:
 

@@ -2,7 +2,7 @@ import json
 import sys
 import random
 
-def generate_pack(filepath, expansion):
+def generate_pack(filepath, expansion, num_packs=1):
 
     with open(filepath) as cards_json:
         cards = json.load(cards_json)

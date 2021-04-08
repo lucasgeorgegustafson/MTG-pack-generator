@@ -11,7 +11,6 @@ def run_generator(filepath, expansion, num_packs=1):
             gen.generate_pack()
             num_packs -= 1
 
-        return 'Hope these will do!'
     else:
         return f'Expansion {expansion} is unsupported.'
 

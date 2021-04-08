@@ -60,3 +60,5 @@ class BaseGenerator:
 
         self.print_pack()
 
+        self.pack = []
+

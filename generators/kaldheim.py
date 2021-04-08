@@ -9,7 +9,7 @@ class KaldheimGenerator(BaseGenerator):
     def fix_lands(self):
 
         self.lands = ['Snow-Covered Mountain', 'Snow-Covered Plains', 'Snow-Covered Forest', 'Snow-Covered Swamp', 'Snow-Covered Island']
-        self.lands = self.lands * 5
+        self.lands = self.lands * 7
 
         for card in self.commons:
 

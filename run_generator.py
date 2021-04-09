@@ -22,7 +22,8 @@ def get_set_cards(filepath, expansion):
     set_cards = []
 
     for card in cards:
-        if card['set'] == expansion.lower() and 'Basic' not in card['type_line']:
+
+        if card['set'] == expansion.lower():
             set_cards.append(card)
 
     return set_cards

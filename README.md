@@ -1,12 +1,13 @@
 MTG Pack Generator
 
-A simple Python script for randomly generating 15-card MTG boosters of a given set.
+An Python program for generating 15-card MTG boosters of a given set.
 
 
 To use:
 
 After cloning, download the bulk data from Scryfall [here](https://scryfall.com/docs/api/bulk-data).
-Default Cards is preferable, but the smaller Oracle Cards will work just fine for the newest set.
+Default Cards is preferable; the smaller Oracle Cards will work just fine for the newest set and
+decreasingly well for older sets.
 
 Run the script:
 
@@ -30,8 +31,6 @@ The distribution of card rarities is that of current boosters:
   10 Commons<br />
   1 Basic Land
 
-The Basic Land was left in partly for whimsy, but mostly as a stand-in for
-Snow-Covered Lands in relevant sets. If generating packs for drafting or
-playing sealed with one of these sets, understand that these Lands represent
-your Snow-Covered Lands.
-
+The "generators" are distinct defined types, not to be confused with the Python generator type.
+Each set gets its own generator. Kaldheim's generator is the only one written so far, and it
+could use some work probably (collation may be insufficiently handled). Go to it.

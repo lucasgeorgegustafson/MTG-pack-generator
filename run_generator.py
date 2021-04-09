@@ -5,9 +5,10 @@ from set_dict import set_dict
 def run_generator(filepath, expansion, num_packs=1):
 
     if expansion in set_dict:
-        gen = set_dict[expansion](get_set_cards(filepath, expansion))
+        set_cards = get_set_cards(filepath, expansion)
 
         while num_packs > 0:
+            gen = set_dict[expansion](set_cards)
             gen.generate_pack()
             num_packs -= 1
 

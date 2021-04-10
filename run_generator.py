@@ -13,7 +13,7 @@ def run_generator(filepath, expansion, num_packs=1):
             num_packs -= 1
 
     else:
-        return f'Expansion {expansion} is unsupported.'
+        print(f'Expansion {expansion} is unsupported.')
 
 def get_set_cards(filepath, expansion):
 

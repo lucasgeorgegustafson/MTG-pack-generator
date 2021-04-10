@@ -1,6 +1,6 @@
 MTG Pack Generator
 
-An Python program for generating 15-card MTG boosters of a given set.
+A program for generating 15-card MTG boosters of a given set.
 
 
 To use:

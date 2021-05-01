@@ -1,6 +1,7 @@
+from generators.abstract import AbstractGenerator
 import random
 
-class BaseGenerator:
+class BaseGenerator(AbstractGenerator):
 
     def __init__(self, set_cards):
 

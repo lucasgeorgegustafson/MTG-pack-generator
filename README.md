@@ -18,7 +18,7 @@ For example, generating a Kaldheim pack might look something like this:
 
   python3 generate_pack.py ../scryfall-data/default-cards.json khm
 
-...and generating six Core Set 2015 packs like this:
+...and generating six Core Set 2015 packs (if someone writes an m15 generator) might look like this:
 
   python3 generate_pack.py bulk-data/default-cards.json m15 6
 
